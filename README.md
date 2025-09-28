@@ -32,3 +32,5 @@ Key files:
 - lib/offline/ - offline support
 
 Project ready for review - core requirements implemented
+
+**Live Demo:** https://vercel.com/nikitas-projects-007847e1/kanplan
