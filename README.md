@@ -1,5 +1,16 @@
 # Kanban Board
 
+## 🔄 Recent Improvements
+
+**Fixed & Enhanced:**
+- Fixed Vitest paths configuration - tests now run properly
+- Implemented real API routes for boards (CRUD operations)
+- Added mouse-based Drag & Drop using dnd-kit
+- Added Error Boundary for better error handling
+- Added Network status indicator
+- Improved WebSocket integration with real endpoints
+- Enhanced 409 conflict resolution implementation
+
 ## 🚀 Quick Start
 
 npm install
@@ -53,4 +64,4 @@ Project ready for review - core requirements implemented
 - Code review and testing
 - Project management and deployment
 
-**Live Demo:** https://vercel.com/nikitas-projects-007847e1/kanplan
+**Live Demo:** https://kanplan.vercel.app
