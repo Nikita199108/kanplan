@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import { useCardsStore } from "@/lib/stores/useCardsStore";
 import { useColumnsStore } from "@/lib/stores/useColumnsStore";
+import ReactMarkdown from 'react-markdown';
 
 interface KanbanCardProps {
     card: {
@@ -122,7 +123,9 @@ export default function KanbanCard({ card, isNewlyCreated = false }: KanbanCardP
                 <>
                     <h3 className="font-medium">{card.title}</h3>
                     {card.description && (
-                        <p className="text-sm text-gray-600 mt-1">{card.description}</p>
+                        <div className="text-sm text-gray-600 mt-1 prose prose-sm max-w-none">
+                            <ReactMarkdown>{card.description}</ReactMarkdown>
+                        </div>
                     )}
                 </>
             )}
